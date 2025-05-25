@@ -259,7 +259,7 @@ contract ProofOfCapital with Deployable, OwnableTransferable {
             let tonToPay: Int = self.calculateTonForTokenAmountEarned(effectiveAmount);
             self.jettonsEarned = self.jettonsEarned + effectiveAmount;
 
-            if (self.contractTonBalance - tonToPay) < 0 {
+            if (self.contractTonBalance - tonToPay < 0) {
                 self.contractTonBalance = 0;
             } else {
                 self.contractTonBalance = self.contractTonBalance - tonToPay;
