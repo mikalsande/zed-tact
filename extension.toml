@@ -1,0 +1,15 @@
+id = "tact"
+name = "Tact"
+description = "Tact language support"
+version = "0.0.1"
+schema_version = 1
+authors = ["Mikal Sande <mikal.sande@gmail.com>"]
+repository = "https://github.com/mikalsande/zed-tact"
+
+# [language_servers.tact]
+# name = "Tact Language Server"
+# languages = ["Tact"]
+
+[grammars.tact]
+repository = "https://github.com/tact-lang/tree-sitter-tact"
+commit = "a6267c2091ed432c248780cec9f8d42c8766d9ad"
